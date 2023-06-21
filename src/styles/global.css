@@ -3,16 +3,22 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700;900&family=Nanum+Pen+Script&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+	--font-normal: "Inter", sans-serif;
+	--font-text: "Nanum Pen Script", cursive;
+	--font-mono: "Space Mono", monospace;
+}
+
 body {
-	font-family: Verdana, sans-serif;
-	margin: auto;
+	max-width: 80ch;
+	//margin: 16px auto;
 	padding: 20px;
-	max-width: 65ch;
 	text-align: left;
-	background-color: #fff;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	line-height: 1.5;
+	line-height: 1.6;
+	font-size: 18px;
 	color: #444;
 }
 h1,
@@ -20,14 +26,10 @@ h2,
 h3,
 h4,
 h5,
-h6,
-strong,
-b {
-	color: #222;
+h6 {
+	line-height: 1.2;
 }
-a {
-	color: #3273dc;
-}
+
 nav a {
 	margin-right: 10px;
 }
@@ -64,4 +66,11 @@ blockquote {
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
+}
+.bapak-svg {
+	text-align: center;
+	margin-top: -100px;
+}
+.arrow-down svg {
+	rotate: 50deg;
 }
