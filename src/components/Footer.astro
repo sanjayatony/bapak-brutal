@@ -3,56 +3,29 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} Bapak Dev. All rights reserved.
-	<div>
-		<svg
-			class="w-10 h-10"
-			width="120"
-			viewBox="0 0 324 317"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-		>
-			<path
-				d="M59.5068 136.983L322.202 162.818"
-				stroke="currentColor"
-				stroke-width="2"
-				stroke-miterlimit="10"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			></path>
-			<path
-				d="M59.5068 136.983L322.202 162.818"
-				stroke="currentColor"
-				stroke-opacity="0.2"
-				stroke-width="2"
-				stroke-miterlimit="10"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			></path>
-			<path
-				d="M1 153.981L263.696 179.816"
-				stroke="currentColor"
-				stroke-width="2"
-				stroke-miterlimit="10"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			></path>
-			<path
-				d="M1 153.981L263.696 179.816"
-				stroke="currentColor"
-				stroke-opacity="0.2"
-				stroke-width="2"
-				stroke-miterlimit="10"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			></path>
-		</svg>
-	</div>
+	<h2>Bapak Dev.</h2>
+	<p>
+		I am a father with over 10 years of experience as a web developer, specializing in WordPress, Next.js, Astro, and Tailwind CSS. Since 2015, I have been
+		successfully working remotely, embracing the flexibility and freedom it offers.
+	</p>
 </footer>
 <style>
 	footer {
+		font-family: var(--font-mono);
 		margin-top: 32px;
 		font-size: 0.8rem;
+		background: var(--green);
+		padding: 32px 16px 64px;
+		text-align: center;
+		border-top: 3px solid #000;
+		color: #000;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	p {
+		max-width: var(--max-width);
+		margin: 0 auto;
 	}
 	svg {
 		margin-top: -50px;
